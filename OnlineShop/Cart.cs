@@ -8,7 +8,9 @@ namespace OnlineShop
 {
     internal class Cart
     {
-        List<CartItem> items;
+        List<CartItem> items = new List<CartItem>();
+
+        public int Count { get {return items.Count();} }
 
         public void Add(Product product)
             { items.Add(new CartItem(product)); }
@@ -16,6 +18,7 @@ namespace OnlineShop
         public void Delete()
             {  }
 
+        
         public CartItem[] getAll()
             { return items.ToArray(); }
 
