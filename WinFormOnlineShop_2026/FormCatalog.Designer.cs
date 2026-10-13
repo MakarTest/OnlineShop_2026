@@ -35,6 +35,7 @@
             label2 = new Label();
             listBoxCatalog = new ListBox();
             labelProductName = new Label();
+            labelDescription = new Label();
             panelCatalog.SuspendLayout();
             panelProduct.SuspendLayout();
             SuspendLayout();
@@ -60,6 +61,7 @@
             // panelProduct
             // 
             panelProduct.BackColor = SystemColors.ControlLight;
+            panelProduct.Controls.Add(labelDescription);
             panelProduct.Controls.Add(labelProductName);
             panelProduct.Controls.Add(label2);
             panelProduct.Dock = DockStyle.Fill;
@@ -105,6 +107,17 @@
             labelProductName.TabIndex = 2;
             labelProductName.Text = "Название товара";
             // 
+            // labelDescription
+            // 
+            labelDescription.BackColor = SystemColors.ActiveCaption;
+            labelDescription.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
+            labelDescription.ForeColor = SystemColors.ActiveCaptionText;
+            labelDescription.Location = new Point(111, 143);
+            labelDescription.Name = "labelDescription";
+            labelDescription.Size = new Size(286, 132);
+            labelDescription.TabIndex = 3;
+            labelDescription.Text = "Название товара";
+            // 
             // FormCatalog
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -131,5 +144,6 @@
         private Label label1;
         private Label labelProductName;
         private Label label2;
+        private Label labelDescription;
     }
 }
