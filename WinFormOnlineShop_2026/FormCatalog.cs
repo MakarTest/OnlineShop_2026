@@ -24,7 +24,7 @@ namespace WinFormOnlineShop_2026
 
         private void listBoxCatalog_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Домашка капут");
         }
     }
 }
